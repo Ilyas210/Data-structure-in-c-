@@ -16,6 +16,12 @@ namespace Graph
         private int _numberOfVertices;
         private enDirectionType _enGraphicDirectionType = enDirectionType.unDirected;
 
+
+        public int this[int i, int j] // indexer => make the object like 2d array
+        {
+            get { return _adjacencyMatrix[i, j]; }
+            private set { _adjacencyMatrix[i, j] = value; }
+        }
         public Graph (List<string> vertices, enDirectionType GraphDirectionType)
         {
             _enGraphicDirectionType = GraphDirectionType;

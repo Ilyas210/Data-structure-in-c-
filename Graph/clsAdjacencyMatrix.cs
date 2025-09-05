@@ -13,7 +13,6 @@ namespace GraphImplementation
     {
 
         int[,] matrix;
-
         public enum enDirectionType { unDericted, Directed};
         enDirectionType Type = enDirectionType.Directed;
 

@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsAdjacencyList.cs" />
     <Compile Include="clsAdjacencyMatrix.cs" />
     <Compile Include="Graph.cs" />
     <Compile Include="Program.cs" />
