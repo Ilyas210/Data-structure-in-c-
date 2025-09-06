@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tree", "..\Tree\Tree.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphImp", "..\Graph\GraphImp.csproj", "{9F46D919-A20B-477B-BA79-1197DEF1BCAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heap", "..\Heap\Heap.csproj", "{502198EF-AB78-44BB-AF50-2E0991CB1DF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9F46D919-A20B-477B-BA79-1197DEF1BCAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F46D919-A20B-477B-BA79-1197DEF1BCAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F46D919-A20B-477B-BA79-1197DEF1BCAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{502198EF-AB78-44BB-AF50-2E0991CB1DF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{502198EF-AB78-44BB-AF50-2E0991CB1DF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{502198EF-AB78-44BB-AF50-2E0991CB1DF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{502198EF-AB78-44BB-AF50-2E0991CB1DF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

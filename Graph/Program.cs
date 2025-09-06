@@ -13,61 +13,61 @@ namespace Graph
         {
             List<string> vertices = new List<string> { "A", "B", "C", "D", "E" };
 
-            //Graph graph = new Graph(vertices, Graph.enDirectionType.Directed);
-            //graph.AddEdge("A", "B", 1);
-            //graph.AddEdge("B", "C", 1);
-            //graph.AddEdge("A", "C", 1);
-            //graph.AddEdge("C", "D", 1);
-            //graph.AddEdge("E", "D", 1);
-
-            //graph.DisplayGraph("undirected matrix : ");
-
-            //clsAdjacencyMatrix graph = new clsAdjacencyMatrix(vertices, clsAdjacencyMatrix.enDirectionType.Directed);
-            //graph.AddEdge("A", "B", 1);
-            //graph.AddEdge("B", "C", 1);
-            //graph.AddEdge("A", "C", 1);
-            //graph.AddEdge("C", "D", 1);
-            //graph.AddEdge("E", "D", 1);
-            //graph.DisplayGraph("adjacency matrix (directed Graph)");
-            //Console.WriteLine();
-            //Console.WriteLine(graph.IsEdge("A", "B") ? "it was an edge between A => b " : "any edge between a and b");
-            //int outdegree = graph.GetDegree("A", (x, y) => graph[x, y]);
-
-            
-            //Console.WriteLine("A out degrees are = " + outdegree);
-
-            //clsAdjacencyMatrix graph2 = new clsAdjacencyMatrix(vertices, clsAdjacencyMatrix.enDirectionType.unDericted);
-            //graph2.AddEdge("A", "B", 10);
-            //graph2.AddEdge("B", "C", 7);
-            //graph2.AddEdge("A", "C", 11);
-            //graph2.AddEdge("C", "D", 8);
-            //graph2.AddEdge("E", "D", 5);
-            //graph2.DisplayGraph("adjacency matrix (weighted Graph)");
-
-             //Adjacency List
-
-            clsAdjacencyList graph = new clsAdjacencyList(vertices, clsAdjacencyList.enDirectionType.Directed);
+            Graph graph = new Graph(vertices, Graph.enDirectionType.Directed);
             graph.AddEdge("A", "B", 1);
             graph.AddEdge("B", "C", 1);
             graph.AddEdge("A", "C", 1);
             graph.AddEdge("C", "D", 1);
             graph.AddEdge("E", "D", 1);
-            graph.DisplayList("adjacency List (directed Graph)");
-            graph.RemoveEdge("A", "B");
-            graph.DisplayList("adjacency List (directed Graph)");
+            graph.DisplayGraph("undirected matrix : ");
+            
+            
+            clsAdjacencyMatrix graphM = new clsAdjacencyMatrix(vertices, clsAdjacencyMatrix.enDirectionType.Directed);
+            graphM.AddEdge("A", "B", 1);
+            graphM.AddEdge("B", "C", 1);
+            graphM.AddEdge("A", "C", 1);
+            graphM.AddEdge("C", "D", 1);
+            graphM.AddEdge("E", "D", 1);
+            graphM.DisplayGraph("adjacency matrix (directed Graph)");
+            Console.WriteLine();
+            Console.WriteLine(graphM.IsEdge("A", "B") ? "it was an edge between A => b " : "any edge between a and b");
+            int outdegree = graphM.GetDegree("A", (x, y) => graphM[x, y]);
+            Console.WriteLine("A out degrees = " + outdegree);
 
+
+            clsAdjacencyMatrix graph2 = new clsAdjacencyMatrix(vertices, clsAdjacencyMatrix.enDirectionType.unDericted);
+            graph2.AddEdge("A", "B", 10);
+            graph2.AddEdge("B", "C", 7);
+            graph2.AddEdge("A", "C", 11);
+            graph2.AddEdge("C", "D", 8);
+            graph2.AddEdge("E", "D", 5);
+            graph2.DisplayGraph("adjacency matrix (weighted Graph)");
+
+            //Adjacency List
+
+            clsAdjacencyList graph4 = new clsAdjacencyList(vertices, clsAdjacencyList.enDirectionType.Directed);
+            graph4.AddEdge("A", "B", 1);
+            graph4.AddEdge("B", "C", 1);
+            graph4.AddEdge("A", "C", 1);
+            graph4.AddEdge("C", "D", 1);
+            graph4.AddEdge("E", "D", 1);
+            graph4.DisplayList("adjacency List (directed Graph)");
+            graph4.RemoveEdge("A", "B");
+            graph4.DisplayList("adjacency List (directed Graph)");
+
+            
             Console.WriteLine("----------------------------------------------\n");
-            clsAdjacencyList graph2 = new clsAdjacencyList(vertices, clsAdjacencyList.enDirectionType.UnDirected);
-            graph2.AddEdge("A", "B", 1);
-            graph2.AddEdge("B", "C", 1);
-            graph2.AddEdge("A", "C", 1);
-            graph2.AddEdge("C", "D", 1);
-            graph2.AddEdge("E", "D", 1);
-            graph2.DisplayList("adjacency List (undirected Graph)");
-            graph2.RemoveEdge("A", "B");
-            graph2.DisplayList("adjacency List (undirected Graph)");
-            Console.WriteLine("C in degree = " + graph2.GetInDegree("C"));
-            Console.WriteLine("D in degree = " + graph2.GetOutDegree("A"));
+            clsAdjacencyList graph5 = new clsAdjacencyList(vertices, clsAdjacencyList.enDirectionType.UnDirected);
+            graph5.AddEdge("A", "B", 1);
+            graph5.AddEdge("B", "C", 1);
+            graph5.AddEdge("A", "C", 1);
+            graph5.AddEdge("C", "D", 1);
+            graph5.AddEdge("E", "D", 1);
+            graph5.DisplayList("adjacency List (undirected Graph)");
+            graph5.RemoveEdge("A", "B");
+            graph5.DisplayList("adjacency List (undirected Graph)");
+            Console.WriteLine("C in degree = " + graph5.GetInDegree("C"));
+            Console.WriteLine("D in degree = " + graph5.GetOutDegree("A"));
             Console.WriteLine();
 
 

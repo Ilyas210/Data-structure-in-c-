@@ -134,7 +134,7 @@ namespace GraphImplementation
             return 0;
         }
 
-        public int GetDegree(string vertece, Func<int, int, int> exe) // resume of two fun getout getin
+        public int GetDegree(string vertece, Func<int, int, int> exe) // use one fun to getin and getout funs
         {
             int count = 0;
             if (_VertexDictionnary.ContainsKey(vertece))
